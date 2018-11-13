@@ -1,3 +1,3 @@
-exports.PREFIX = "!";
+exports.PREFIX = "-";
 
 exports.TOKEN = "hi";
