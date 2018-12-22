@@ -457,37 +457,6 @@ client.on('message', async msg => {
             .setColor("#fc1919")
             .setDescription(":x: Can't run this command in this channel! (You must be in a ticket channel)")).then(message => message.delete(5000));
         }
-    /*} else if (msg.content.startsWith(`${PREFIX}commission`)) {
-        if (!(msg.member.hasPermission("MANAGE_CHANNELS"))) return wrong("You haven't got permission to do this!");
-        let message;
-        message = await msg.channel.send(new Discord.RichEmbed()
-        .setColor("#42f4f1")
-        .setTitle("Starting Manual Commission" +
-        "\nPlease mention the role that is required for this project's completion."));
-        const filter = m => m.author.id === msg.author.id;
-        var requiredRole;
-        var details;
-        var deadline;
-        var tosReaded;
-        var extraDetails;
-        var priceOrQuote;
-        await msg.channel.awaitMessages(filter, {
-            max: 1,
-            time: 600000
-        }).then(collected => {
-            requiredRole = collected.first();
-            collected.delete();
-        });
-        message.edit(new Discord.RichEmbed()
-        .setColor("#42f4f1")
-        .setTitle("Please provide the details of the client's request."));
-        await msg.channel.awaitMessages(filter, {
-            max: 1,
-            time: 600000
-        }).then(collected => {
-            details = collected.first();
-            console.log(details);
-        });*/
     } else if (msg.content == `${PREFIX}newhr`) {
         if (!msg.member.guild.me.hasPermission("MANAGE_CHANNELS")) return wrong("I don't have the Manage Channels permission, so i can't do this!");
         let tcreatoriu = msg.author;
